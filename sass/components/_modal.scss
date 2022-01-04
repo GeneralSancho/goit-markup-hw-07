@@ -1,0 +1,134 @@
+.modal__block {
+    position: relative;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: opacity var(--timer) var(--cubic-bezier),
+    visibility var(--timer) var(--cubic-bezier);
+
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+    }
+}
+
+.modal {
+    min-height: 581px;
+    min-width: 528px;
+    background-color: var(--additional-white-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 40px;
+}
+
+.close {
+    fill: currentColor;
+}
+
+.close-btn {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--additional-white-color);
+    color: var(--title-text-color);
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    transition: color var(--timer) var(--cubic-bezier);
+
+    &:focus {
+        color:var(--accent-color);
+    }
+    &:hover{
+        color:var(--accent-color);
+    }
+}
+
+// form
+
+.modal-form {
+    width: 448px;
+}
+
+.modal-form__title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1,15;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.modal-form__field {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 10px;  
+}
+
+.modal-form__field-name {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    margin-bottom: 4px;
+}
+
+.modal-form__block {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content:center;
+    position: relative;
+    margin-top: 0;
+    color: var(--title-text-color);  
+
+    & svg {
+    
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 13px;
+    fill: currentColor;
+    transition: color var(--timer) var(--cubic-bezier);
+    }
+
+    & input {
+    
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 42px;
+    cursor: pointer;
+    outline: none;
+    transition: border-color var(--timer) var(--cubic-bezier);
+
+        &:focus {
+            border-color: var(--accent-color);
+        }
+
+        &:focus +svg {
+            color: var(--accent-color);
+        }
+
+    }
+
+}
+
