@@ -22,11 +22,7 @@ url(../images/hero-img.jpg);
     margin-top: 0;
     margin-bottom: 30px;
     color: var(--additional-white-color);
-    font-style: normal;;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
+     @include font(900, 44px, 1.36, 0.06em);
     text-align: center;
     text-transform: uppercase;
 }
@@ -42,10 +38,7 @@ url(../images/hero-img.jpg);
     min-width: 200px;
     margin-bottom: 0;
     font-family: Roboto;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.06em;
+    @include font(700, 16px, 1.9, 0.06em);
     transition: box-shadow var(--timer) var(--cubic-bezier),
     background-color var(--timer) var(--cubic-bezier);
 

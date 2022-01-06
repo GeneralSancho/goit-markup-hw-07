@@ -9,28 +9,20 @@
     margin-bottom: 20px;
     color: var(--additional-white-color);
     text-decoration: none;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.19;
+    @include font(700, 26px, 1.19, 0.03em);
     display: block;
-    letter-spacing: 0.03em;
 
 }
 .footer__address {
     color: var(--additional-white-color);
-    font-size: 14px;
-    line-height: 1.71;
-    font-style: normal;
-
+    @include font(500, 14px, 1.71, 0.03em);
     margin-top: 0;
     margin-bottom: 9px;
 }
 .footer__link {
     color: var(--contact-text-color);
     text-decoration: none;
-    font-size: 14px;
-    line-height: 1.71;
-    font-style: normal;
+    @include font(500, 14px, 1.71, 0.03em);
     margin-top: 0;
     transition: color var(--timer) var(--cubic-bezier);
     
@@ -55,10 +47,7 @@
 }
 .footer-social__title {
     font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    @include font(700, 14px, 1.14, 0.03em);
     text-transform: uppercase;
     color: var(--additional-white-color);
     margin-top: 0;
@@ -105,10 +94,7 @@
     margin-bottom: 20px;
     display: flex;
     margin-top: 0;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    @include font(700, 14px, 1.14, 0.03em);
     text-transform: uppercase;
     color: var(--additional-white-color);
 }
@@ -134,9 +120,7 @@
     height: 50px;
     padding-left: 16px;
     color: var(--additional-white-color);
-    letter-spacing: 0.03em;
-    font-size: 16px;
-    line-height: 1.25;
+    @include font(500, 16px, 1.25, 0.03em);
     transition: border var(--timer) var(--cubic-bezier);
 
     &:focus {
@@ -144,12 +128,10 @@
     }
 
     &::placeholder {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--subscribe-input-placeholder);
     display: flex;
     align-items: center;
-    letter-spacing: 0.03em;
-    font-size: 16px;
-    line-height: 1.25;
+    @include font(500, 16px, 1.25, 0.03em);
     }
 }
 .footer-subscribe__form-button {
@@ -163,10 +145,7 @@
     @extend %align-center;
     cursor: pointer;
     font-family: Roboto;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.06em;
+     @include font(700, 16px, 1.9, 0.06em);
     box-shadow: 0px 4px 4px var(--box-shadow);
     transition: background-color var(--timer) var(--cubic-bezier);  
     

@@ -15,20 +15,14 @@
 }
 
 .work__action-line-title {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
+    @include font(700, 14px, 1.14, 0.03em);
     text-align: center;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     margin: 0;
     color: var(--additional-white-color);
 }
 .section__title {
-
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 1.17;
+    @include font(700, 36px, 1.17, 0.03em);
     text-align: center;
     color: var(--title-text-color);
     margin-top: 0;

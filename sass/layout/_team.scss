@@ -1,9 +1,7 @@
 .team .title {
 
     color: var(--title-text-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
+    @include font(500, 16px, 1.19, 0.03em);
     margin-bottom: 10px;
     text-align: center;
 }
@@ -43,8 +41,7 @@
 
     margin-top: 0;
     margin-bottom: 16px;
-    font-size: 16px;
-    line-height: 1.19;
+    @include font(500, 16px, 1.19, 0.03em);
     text-align: center;
 }
 

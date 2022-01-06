@@ -16,9 +16,7 @@
 
 .features__title-block {
     color: var(--title-text-color);
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
+    @include font(700, 14px, 1.14, 0.03em);
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 10px;
