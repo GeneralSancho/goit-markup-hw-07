@@ -68,7 +68,7 @@ img {
   margin: -1px;
 }
 
-.features__icon-block, .work__action-line, .team__social-link, .clients__link, .footer-social__link, .footer-subscribe__form-button {
+.modal-form__check, .features__icon-block, .work__action-line, .team__social-link, .clients__link, .footer-social__link, .footer-subscribe__form-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -194,7 +194,7 @@ img {
 .modal-form__title {
   font-weight: bold;
   font-size: 20px;
-  line-height: 1,15;
+  line-height: 1.15;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   margin-top: 0;
@@ -215,6 +215,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-weight: normal;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -347,16 +348,8 @@ img {
   width: 16px;
   height: 15px;
   margin-right: 7px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
       align-self: center;
   border: 2px solid var(--title-text-color);
   border-radius: 2px;
@@ -630,7 +623,7 @@ img {
   margin-left: 30px;
 }
 
-.features.features__title-block {
+.features__title-block {
   color: var(--title-text-color);
   font-weight: bold;
   font-size: 14px;
